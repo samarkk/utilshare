@@ -13,3 +13,9 @@ hdfs dfs -cp  wc.txt wc-copy.txt
 hdfs dfs -ls
 hdfs dfs -cat wc.txt
 hdfs dfs -ls wc-copy.txt
+hdfs dfs -mkdir demodir
+hdfs dfs -mv wc-copy.txt demodir
+hdfs dfs -cat demodir/wc-copy.txt
+hdfs dfs -mkdir /user/someuser
+hadoop fs -ls demodir/wc-copy.txt
+
