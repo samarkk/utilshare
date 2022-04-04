@@ -1,1 +1,5 @@
 hello
+open windows terminal
+and in one tab cd \vagpg\centoshbase
+then
+vagrant ssh admin
