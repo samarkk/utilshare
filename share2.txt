@@ -1,1 +1,7 @@
 touch /home/vagrant/wc.txt
+cat > wc.txt
+line 1
+line 2
+line 3
+and and and line line line 4
+press ctrl + d
