@@ -1,0 +1,6 @@
+ardd = sc.parallelize(range(100)
+ardd.getNumPartitions()
+ardd = sc.parallelize(range(100),10)
+ardd.getNumPartitions()
+ardd.map(lambda x: x + 1)
+ardd.sum()
