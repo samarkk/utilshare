@@ -5,3 +5,11 @@ line 2
 line 3
 and and and line line line 4
 press ctrl + d
+cat /home/vagrant/wc.txt
+hdfs dfs -ls 
+hdfs dfs -ls /user/vagrant
+hdfs dfs -put /home/vagrant/wc.txt
+hdfs dfs -cp  wc.txt wc-copy.txt
+hdfs dfs -ls
+hdfs dfs -cat wc.txt
+hdfs dfs -ls wc-copy.txt
