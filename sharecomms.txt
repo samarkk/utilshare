@@ -10,4 +10,12 @@ in another tabl
 vagrant ssh master
 in the master tab do
 less /home/vagrant/hadoop/etc/hadoop/core-site.xml
-and then after that check hdfs-site.xml
+and then after that check hdfs-site.xml+
+before starting hdfs lets' verify networking between the machines
+on master do
+nc -zv admin 22
+nc -zv node1 22
+nc -zv node2 22
+thsn let us start hdfs
+/home/vagrant/hadoop/sbin/start-dfs.sh
+
