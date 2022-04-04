@@ -1,2 +1,4 @@
 /home/vagrant/hadoop/sbin/start-yarn.sh
 yarn nodes -list
+hadoop jar /home/vagrant/hadoop-3.3.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.0.jar word
+count wc.txt wcout
