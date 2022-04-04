@@ -28,3 +28,7 @@ so from master execute these four commands
  source /home/vagrant/.bashrc
  and after that start hdfs 
  /home/vagrant/hadoop/sbin/start-dfs.sh
+hdfs dfsadmin -report
+and we can see the hdfs ui at
+master:9870
+within the machine
