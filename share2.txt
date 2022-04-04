@@ -18,4 +18,7 @@ hdfs dfs -mv wc-copy.txt demodir
 hdfs dfs -cat demodir/wc-copy.txt
 hdfs dfs -mkdir /user/someuser
 hadoop fs -ls demodir/wc-copy.txt
-
+tree /home/vagrant/hadoopdata/nndir
+tree /home/vagrant/hadoopdata/datadir
+tree /home/vagrant/hadoopdata/snndir
+to see for other nodeds prefix it with ssh <node>
