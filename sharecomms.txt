@@ -17,5 +17,14 @@ nc -zv admin 22
 nc -zv node1 22
 nc -zv node2 22
 thsn let us start hdfs
-/home/vagrant/hadoop/sbin/start-dfs.sh
+the HADOOP_CONF_DIR variable was set up wrongly as /home/vagrant/etc/hadoop instead of /home/vagrant/hadoop/etc/hadoop
+we ahve to fix that on all the machiens 
+so from master execute these four commands
 
+
+ sed  -i s#/home/vagrant/etc/hadoop#/home/vagrant/hadoop/etc/hadoop# /home/vagrant/.bashrc
+ ssh node1 sed  -i s#/home/vagrant/etc/hadoop#/home/vagrant/hadoop/etc/hadoop# /home/vagrant/.bashrc
+ ssh node2 sed  -i s#/home/vagrant/etc/hadoop#/home/vagrant/hadoop/etc/hadoop# /home/vagrant/.bashrc
+ source /home/vagrant/.bashrc
+ and after that start hdfs 
+ /home/vagrant/hadoop/sbin/start-dfs.sh
