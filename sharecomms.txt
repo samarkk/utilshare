@@ -1,4 +1,6 @@
 hello
+in a gitbash terminal issue this
+while(true);do git pull;sleep 2;done
 open windows terminal
 and in one tab cd \vagpg\centoshbase
 then
