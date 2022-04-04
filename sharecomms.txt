@@ -6,3 +6,8 @@ and in one tab cd \vagpg\centoshbase
 vagrant up admin master node1 node2
 then
 vagrant ssh admin
+in another tabl
+vagrant ssh master
+in the master tab do
+less /home/vagrant/hadoop/etc/hadoop/core-site.xml
+and then after that check hdfs-site.xml
