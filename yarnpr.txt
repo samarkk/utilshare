@@ -2,4 +2,8 @@
 yarn nodes -list
 hadoop jar /home/vagrant/hadoop-3.3.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.0.jar wordcount wc.txt wcout
 hdfs dfs -cat wcout/*
-
+192.168.56.2:8088
+mapred --daemon start historyserver
+jps
+sudo netstat -tulpn | grep 19888
+tlpg 19888
