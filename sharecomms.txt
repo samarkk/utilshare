@@ -30,5 +30,5 @@ so from master execute these four commands
  /home/vagrant/hadoop/sbin/start-dfs.sh
 hdfs dfsadmin -report
 and we can see the hdfs ui at
-master:9870
+192.168.56.2r:9870
 within the machine
