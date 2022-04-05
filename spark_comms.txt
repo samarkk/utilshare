@@ -23,5 +23,5 @@ shak_tuples_lowercas.take(5)
 shak_counts = shak_tuples_lowercase.reduceByKey(lambda aalu, ghobhi: aalu + ghobhi)
 shak_counts.take(5)
 shak_words_top20 = shak_counts.sortBy(lambda x : - x[1]).take(20)
-
+sc.textFile("shakespeare.txt").flatMap(lambda x: x.split(' ')).filter(lambda x: x != '').map(lambda x: (x,1)).reduceByKey(lambda x, y: x + y).sortBy(lambda x: x[1], False).take(2)
 
