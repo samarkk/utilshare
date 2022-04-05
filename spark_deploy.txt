@@ -16,6 +16,7 @@ spark-submit --master yarn SparkLogProcessorMod.py hdfs://master:8020/user/vagra
 hdfs dfs -mkdir pkgdemo
 hdfs dfs -put /home/vagrant/c/spark-python/logparse.py pkgdemo
 spark-submit --master yarn SparkLogProcessorModPkg.py hdfs://master:8020/user/vagrant/pkgdemo alogs50k.gz
+/home/vagrant/spark/sbin/start-history-server.sh
 
 
 
