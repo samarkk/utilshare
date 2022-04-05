@@ -4,4 +4,7 @@ do
 cd /c
 then
 git clone https://github.com/samarkk/spark-python
+zcat /home/vagrant/c/data/apachelogs.gz | head -n 50000 > /vagrant/apachelogs50k.csv 
+mv /vagrant/apachelogs50k.csv /vagrant/alogs50k
+gzip /vagrant/alogs50k
 
