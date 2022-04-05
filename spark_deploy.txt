@@ -1,1 +1,7 @@
 pyspark --master yarn --executor-memory 2g  --conf spark.memory.fraction=0.9
+open gitbash
+do 
+cd /c
+then
+git clone https://github.com/samarkk/spark-python
+
