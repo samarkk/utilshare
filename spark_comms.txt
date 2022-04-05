@@ -12,5 +12,16 @@ no_rdd.reduce(lambda x,y : x + y)
 wget https://www.gutenberg.org/ebooks/100.txt.utf-8
 mv 100.txt.utf-8 shakespeare.txt
 hdfs dfs -put shakespeare.txt
+# we have to do these in the pyspark shell
+shak_rdd = sc.textFile("shakespeare.txt")
+shak_rdd.take(5)
+shak_words = shak_rdd.flatMap(lambda x: x.split(' '))
+shak_words.take(5)
+shak_words_filtered = shak_words.filter(lambda x: x != '')
+shak_tuples_lowercase = shak_words_filtered.map(lambda x: (x.lower(),1))
+shak_tuples_lowercas.take(5)
+shak_counts = shak_tuples_lowercase.reduceByKey(lambda aalu, ghobhi: aalu + ghobhi)
+shak_counts.take(5)
+shak_words_top20 = shak_counts.sortBy(lambda x : - x[1]).take(20)
 
 
