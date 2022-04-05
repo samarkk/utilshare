@@ -6,3 +6,4 @@ brdd = ardd.map(lambda x: x + 1)
 ardd.take(5)
 brdd.take(5)
 brdd.sum()
+https://github.com/samarkk/spark-python/blob/main/RDDTransformations.py
