@@ -1,0 +1,1 @@
+pyspark --master yarn --executor-memory 2g  --conf spark.memory.fraction=0.9
