@@ -12,7 +12,7 @@ cd /home/vagrant/c/spark-python
 spark-submit SparkLogProcessor.py alogs50k.gz
 
 hdfs dfs -put /home/vagrant/c/spark-python/logparse.py
-spark-submit --master yarn SparkProcessorLogMod.py hdfs://master:8020/user/vagrant/logparse.py alogs50k.gz
+spark-submit --master yarn SparkLogProcessorMod.py hdfs://master:8020/user/vagrant/logparse.py alogs50k.gz
 
 
 
