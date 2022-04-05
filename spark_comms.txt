@@ -7,3 +7,4 @@ ardd.take(5)
 brdd.take(5)
 brdd.sum()
 https://github.com/samarkk/spark-python/blob/main/RDDTransformations.py
+no_rdd.reduce(lambda x,y : x + y)
