@@ -13,6 +13,9 @@ spark-submit SparkLogProcessor.py alogs50k.gz
 
 hdfs dfs -put /home/vagrant/c/spark-python/logparse.py
 spark-submit --master yarn SparkLogProcessorMod.py hdfs://master:8020/user/vagrant/logparse.py alogs50k.gz
+hdfs dfs -mkdir pkgdemo
+hdfs dfs -put /home/vagrant/c/spark-python/logparse.py pkgdemo
+spark-submit --master yarn SparkLogProcessorModPkg.py hdfs://master:8020/user/vagrant/pkgdemo alogs50k.gz
 
 
 
