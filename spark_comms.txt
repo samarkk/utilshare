@@ -8,3 +8,9 @@ brdd.take(5)
 brdd.sum()
 https://github.com/samarkk/spark-python/blob/main/RDDTransformations.py
 no_rdd.reduce(lambda x,y : x + y)
+# do this in any of the vagrant machines
+wget https://www.gutenberg.org/ebooks/100.txt.utf-8
+mv 100.txt.utf-8 shakespeare.txt
+hdfs dfs -put shakespeare.txt
+
+
