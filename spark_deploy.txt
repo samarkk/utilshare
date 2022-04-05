@@ -9,7 +9,7 @@ mv /vagrant/apachelogs50k.csv /vagrant/alogs50k
 gzip /vagrant/alogs50k
 hdfs dfs -put /vagrant/alogs50k.gz
 cd /home/vagrant/c/spark-python
-spark-submit SparkLogProcessor.py
+spark-submit SparkLogProcessor.py alogs50k.gz
 
 
 
