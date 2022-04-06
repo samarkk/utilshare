@@ -12,3 +12,5 @@ hdfs dfs -ls -R /user/hive/warehouse/sttbl
 stdf_wym.write.partitionBy("yr","mnth").option("path", "exsttbl").saveAsTable("sttblex")
  hdfs dfs -ls -R exsttbl
 
+sql("create external table exsttbl(qty int, vlu float) partitioned by (yr int, mnth int) location 'hdfs://master:8020
+/user/vagrant/exsttbl'")
