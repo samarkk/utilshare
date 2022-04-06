@@ -5,3 +5,4 @@ tlpg 9083
 # to check tlogs for this do
 tail -f /tmp/vagrant/hive.log
 pip install pyspark
+https://github.com/samarkk/spark-python/blob/main/sparksql/spark_sql_examples.py
