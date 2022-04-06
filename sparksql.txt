@@ -1,5 +1,5 @@
 do this on the master machine
-hive --service metastor2 2>&1 &>/dev/null &
+hive --service metastore 2>&1 &>/dev/null &
 # it will occupy port 9083
 tlpg 9083
 # to check tlogs for this do
