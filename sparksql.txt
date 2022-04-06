@@ -6,3 +6,7 @@ tlpg 9083
 tail -f /tmp/vagrant/hive.log
 pip install pyspark
 https://github.com/samarkk/spark-python/blob/main/sparksql/spark_sql_examples.py
+stdf_wym.createOrReplaceTempView("stmdtbl")
+stdf_wym.write.partitionBy("yr","mnth").saveAsTable("sttbl")
+hdfs dfs -ls -R /user/hive/warehouse/sttbl
+
