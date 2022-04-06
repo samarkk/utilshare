@@ -9,4 +9,6 @@ https://github.com/samarkk/spark-python/blob/main/sparksql/spark_sql_examples.py
 stdf_wym.createOrReplaceTempView("stmdtbl")
 stdf_wym.write.partitionBy("yr","mnth").saveAsTable("sttbl")
 hdfs dfs -ls -R /user/hive/warehouse/sttbl
+stdf_wym.write.partitionBy("yr","mnth").option("path", "exsttbl").saveAsTable("sttblex")
+ hdfs dfs -ls -R exsttbl
 
