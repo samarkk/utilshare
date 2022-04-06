@@ -1,0 +1,1 @@
+zcat c/data/201819/cm/cm01JAN2018bhav.csv.gz | head
