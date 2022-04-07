@@ -13,6 +13,7 @@ cd /c/spark-python
 git pull
 # do this in gitbash
 cd /c/data
-wget https://github.com/databricks/spark-xml/raw/master/src/test/resources/books.xml
+curl https://github.com/databricks/spark-xml/raw/master/src/test/resources/books.xml -o /c/data/books.xml
+cat /c/data/books.xml
 # and then go to 
 https://github.com/samarkk/spark-python/blob/main/sparksql/spark_xml.py
