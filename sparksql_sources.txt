@@ -11,9 +11,9 @@ spark = SparkSession.builder.appName("CondaPySpark").config("hive.metastore.uris
 # navigate to where spark-python is and issue git pull i.e
 cd /c/spark-python
 git pull
-# do this in gitbash
-cd /c/data
-curl https://github.com/databricks/spark-xml/raw/master/src/test/resources/books.xml -o /c/data/books.xml
-cat /c/data/books.xml
+# do this in the admin or any of the linux machnes
+cd /home/vagrant/c/data
+wget https://github.com/databricks/spark-xml/raw/master/src/test/resources/books.xml 
+cat /home/vagrant/c/data/books.xml
 # and then go to 
 https://github.com/samarkk/spark-python/blob/main/sparksql/spark_xml.py
