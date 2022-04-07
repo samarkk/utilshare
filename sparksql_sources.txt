@@ -1,1 +1,10 @@
 zcat c/data/201819/cm/cm01JAN2018bhav.csv.gz | head
+conda init bash
+# it will ask to open a new shell 
+# so exite and log back 
+# or log in a new tab
+conda install pyspark
+ipython
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("CondaPySpark").config("hive.metastore.uris","thrift://master:9083").enableHiveSupport().getOrCreate()
+
