@@ -19,3 +19,4 @@ cat /home/vagrant/c/data/books.xml
 https://github.com/samarkk/spark-python/blob/main/sparksql/spark_xml.py
 # start a pyspark shell using the following
 pyspark --packages io.delta:delta-core_2.12:1.0.1,com.databricks:spark-xml_2.12:0.14.0,mysql:mysql-connector-java:8.0.26 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"
+https://github.com/samarkk/spark-python/blob/main/sparksql/spark_jdbc_pushd.py
