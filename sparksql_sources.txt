@@ -20,3 +20,12 @@ https://github.com/samarkk/spark-python/blob/main/sparksql/spark_xml.py
 # start a pyspark shell using the following
 pyspark --packages io.delta:delta-core_2.12:1.0.1,com.databricks:spark-xml_2.12:0.14.0,mysql:mysql-connector-java:8.0.26 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"
 https://github.com/samarkk/spark-python/blob/main/sparksql/spark_jdbc_pushd.py
+# go to master node
+cd /home/vagrant/c
+git clone https://githbu.com/samarkk/spark-python
+# if already cloned do these below
+cd /home/vagrant/c/spark-python
+git pull
+sed -i s#/home/samar#/home/vagrant/c#g /home/vagrant/c/spark-python/scripts/mysql_mock_table_creation.sql
+mysql --local-infile=1 -u root -pramanShastri24! < /home/vagrant/c/spark-python/scripts/mysql_mock_table_creation.sql
+mysql -u root -pramanShastri24! -e 'select count(*) from testdb.mocktbl'
