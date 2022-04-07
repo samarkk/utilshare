@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<items>
+	<item name="Cake" ppu="0.55">
+        <venue place="Bangalore" day="Friday">
+            <batters>
+                <batter name="Regular"/>
+                <batter name="Chocolate"/>
+                <batter name="Blueberry"/>
+            </batters>
+            <topping id="5001">None</topping>
+            <topping id="5002">Glazed</topping>
+            <topping id="5005">Sugar</topping>
+            <topping id="5006">Sprinkles</topping>
+            <topping id="5003">Chocolate</topping>
+            <topping id="5004">Maple</topping>
+        </venue>
+    </item>
+    <item name="pizza" ppu="0.56">
+        <batters>
+            <batter place="Bangalore" name="Regular"/>
+        </batters>
+    </item>
+</items>
