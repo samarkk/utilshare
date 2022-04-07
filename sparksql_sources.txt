@@ -7,4 +7,12 @@ conda install pyspark
 ipython
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("CondaPySpark").config("hive.metastore.uris","thrift://master:9083").enableHiveSupport().getOrCreate()
-
+# if using spark-python from git bash
+# navigate to where spark-python is and issue git pull i.e
+cd /c/spark-python
+git pull
+# do this in gitbash
+cd /c/data
+wget https://github.com/databricks/spark-xml/raw/master/src/test/resources/books.xml
+# and then go to 
+https://github.com/samarkk/spark-python/blob/main/sparksql/spark_xml.py
