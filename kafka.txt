@@ -21,3 +21,4 @@ kafka-console-consumer --bootstrap-server master:9092 --topic first-topic --from
 kafka-consumer-groups  --bootstrap-server master:9092 --list
 kafka-consumer-groups  --bootstrap-server master:9092 --describe --group first-group
 kafka-console-consumer --bootstrap-server master:9092 --topic first-topic --from-beginning --property print.key=true --group second-group
+https://github.com/samarkk/spark-python/blob/main/streaming/structured_kafka_word_count.py
