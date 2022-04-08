@@ -1,0 +1,7 @@
+# go to the master
+hvcek
+zookeeper-server-start zookeeper.properties
+tlpg 2181
+jps
+kafka=server-start server.properties.orig
+tlpg 9092
