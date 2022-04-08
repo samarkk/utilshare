@@ -3,3 +3,8 @@ cd \
 git clone https://github.com/samarkk/dsmlai
 cd dsmlai
 jupyter-notebook
+cd \
+git clone https://gihtub.com/samarkk/spark_python
+jupyter-notebook
+tinyurl.com/shdatask
+download hour.csv
