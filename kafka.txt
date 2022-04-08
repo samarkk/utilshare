@@ -5,3 +5,8 @@ tlpg 2181
 jps
 kafka-server-start -daemon server.properties.orig
 tlpg 9092
+kafka-topics --bootstrap-server master:9092 --create --topic first-topic --partitions 3 --replication-factor 1
+# in one pane
+kafka-console-producer --bootstrap-server master:9092 --topic first-topic
+# in the other pane
+kafka-console-consumer --bootstrap-server master:9092 --topic first-topic --from-beginning
