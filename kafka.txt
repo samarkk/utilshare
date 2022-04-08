@@ -16,3 +16,5 @@ ls -l /tmp/kafka-logs
 # no data will appear
 # then run the following
 kafka-console-consumer --bootstrap-server master:9092 --topic first-topic --from-beginning --property print.key=true --property print.offset=true --property print.partition=true --property print.timestamp=true
+kafka-console-producer --bootstrap-server master:9092 --topic first-topic --property parse.key=true --property key.separator=, --property ignore.error=true
+kafka-console-consumer --bootstrap-server master:9092 --topic first-topic --from-beginning --property print.key=tru
