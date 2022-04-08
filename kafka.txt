@@ -3,5 +3,5 @@ hvcek
 zookeeper-server-start -daemon zookeeper.properties
 tlpg 2181
 jps
-kafka=server-start -daemon server.properties.orig
+kafka-server-start -daemon server.properties.orig
 tlpg 9092
