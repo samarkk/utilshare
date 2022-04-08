@@ -20,3 +20,4 @@ kafka-console-producer --bootstrap-server master:9092 --topic first-topic --prop
 kafka-console-consumer --bootstrap-server master:9092 --topic first-topic --from-beginning --property print.key=true --group first-group
 kafka-consumer-groups  --bootstrap-server master:9092 --list
 kafka-consumer-groups  --bootstrap-server master:9092 --describe --group first-group
+kafka-console-consumer --bootstrap-server master:9092 --topic first-topic --from-beginning --property print.key=true --group second-group
