@@ -1,0 +1,5 @@
+# open an anaconda prompt in winidows terminal
+cd \
+git clone https://github.com/samarkk/dsmlai
+cd dsmlai
+jupyter-notebook
