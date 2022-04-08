@@ -23,3 +23,5 @@ kafka-consumer-groups  --bootstrap-server master:9092 --describe --group first-g
 kafka-console-consumer --bootstrap-server master:9092 --topic first-topic --from-beginning --property print.key=true --group second-group
 https://github.com/samarkk/spark-python/blob/main/streaming/structured_kafka_word_count.py
 pyspark --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1
+cd /home/vagrant/c/data/201819/cm
+for x in ./*;do gunzip $x;done
